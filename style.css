@@ -36,6 +36,7 @@ div.two {
 
 div.three {
     background-color: var(--Purple-500);
+    grid-row-start: 1;
 }
 
 div.four {
@@ -44,22 +45,33 @@ div.four {
 
 div.five {
     background-color: var(--White);
-
 }
 
 div.six {
     background-color: var(--Yellow-500);
-
 }
 
 div.seven {
     background-color: var(--Purple-500);
-
 }
 
 div.eight {
     background-color: var(--Purple-100);
+}
 
+main.main-container {
+    padding: 2rem 1rem;
+}
+
+section.app-grid-container {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1.2rem;
+}
+
+section>div {
+    padding: 2.5rem 1.5rem;
+    border-radius: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -70,7 +82,6 @@ div.eight {
         height: 100vh;
     }
 
-    /* column 1 */
     section.app-grid-container {
         display: grid;
         grid-template-rows: repeat(7, 1fr);
