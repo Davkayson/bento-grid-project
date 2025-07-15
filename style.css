@@ -64,6 +64,233 @@ div.eight {
 
 }
 
+section.app-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* For tabs */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    section.app-grid-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vh;
+        min-height: 100vh;
+        margin: 2rem;
+    }
+
+     section.app-grid-container .three {
+        display: block;
+        order: -9;
+        padding: 1rem;
+        border-radius: 0.rem;
+    }
+
+     section.app-grid-container .three div {
+        width: 100%;
+        display: block;
+    }
+
+     section.app-grid-container .three div img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+     section.app-grid-container .three p:nth-of-type(1) {
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--White);
+        text-align: center;
+    }
+
+    section.app-grid-container .three p:nth-of-type(1) span:nth-of-type(2) {
+        color: var(--Yellow-500);
+    }
+
+    section.app-grid-container .three div {
+        width: 37%;
+        margin: 20px auto 0;
+    }
+
+    section.app-grid-container .three div img {
+        width: 100%;
+    }
+
+    section.app-grid-container .three p:nth-of-type(2) {
+        font-weight: 400;
+        color: var(--Yellow-100);
+        text-align: center;
+    }
+
+    section.app-grid-container .four {
+        display: flex;
+        flex-direction: column;
+        order: -8;
+    }
+
+    section.app-grid-container .four div {
+        width: 100%;
+    }
+
+    section.app-grid-container .four div img {
+        width: 100%;
+    }
+
+    section.app-grid-container .four p {
+        font-weight: 500;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        line-height: 1.3rem;
+    }
+
+     section.app-grid-container .six {
+        display: flex;
+        flex-direction: column;
+        order: -7;
+    }
+
+    section.app-grid-container .six p {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.3rem;
+    }
+
+    section.app-grid-container .six div {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    section.app-grid-container .six div img {
+        width: 100%;
+    }
+
+    section.app-grid-container .eight {
+        display: flex;
+        flex-direction: column;
+        order: -6;
+    }
+
+    section.app-grid-container .eight .para1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.4rem;
+    }
+
+
+    section.app-grid-container .eight div {
+        width: 100%;
+        margin-top: 20px;
+
+    }
+    section.app-grid-container .eight div img {
+        width: 100%;
+    }
+    section.app-grid-container .eight p {
+        font-weight: 400;
+        margin-top: 20px; 
+    }
+
+    section.app-grid-container .seven {
+        display: flex;
+        flex-direction: column;
+        order: -5;
+    }
+
+    section.app-grid-container .seven div {
+        flex-basis: 40%;
+        flex-shrink: 0;
+    }
+
+    section.app-grid-container .seven div img {
+        width: 100%;
+    }
+
+    section.app-grid-container .seven p {
+        color: var(--White);
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.4rem;
+    }
+
+    section.app-grid-container .five {
+        display: flex;
+        flex-direction: column;
+        order: -4;
+    }
+
+     section.app-grid-container .five .para1 {
+        font-weight: 500;
+        font-size: 3rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+     section.app-grid-container .five .para2 {
+        margin-bottom: 20px;
+     }
+
+    section.app-grid-container .five div {
+        width: 75%;
+        margin-bottom: 30px;
+    }
+
+    section.app-grid-container .five div img {
+        width: 100%;
+    }
+
+    section.app-grid-container .one {
+        display: flex;
+        flex-direction: column;
+        order: -3;
+    }
+
+    .one p {
+        line-height: 1.5rem;
+    }
+
+    .one p span:first-of-type,
+    .one p span:last-of-type {
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    .one p span:last-of-type {
+        color: var(--Purple-500);
+        font-style: italic;
+    }
+
+    .one div {
+        margin-top: 20px;
+    }
+
+    .one div img {
+        width: 100%;
+    }
+
+    section.app-grid-container .two {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .two p {
+        line-height: 1.5rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    .two div {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .two div img {
+        width: 100%;
+    }
+
+}
+
+/* For desktops */
 @media screen and (min-width: 1024px) {
     main.main-container {
         max-width: 75vw;
@@ -74,7 +301,6 @@ div.eight {
 
     /* column 1 */
     section.app-grid-container {
-        display: grid;
         grid-template-rows: repeat(7, 1fr);
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
